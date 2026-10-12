@@ -255,3 +255,13 @@ body{background:radial-gradient(ellipse at 100% 0%,rgba(53,99,233,.07),transpare
 .error{background:#fff0f1!important;color:#b42332!important;border-color:#f6d4d8!important}
 .form h1{color:#3563e9!important;background:none!important;-webkit-text-fill-color:initial!important}
 @media(max-width:850px){.shell{padding-left:0!important}.app-nav{position:static!important;width:auto!important;height:auto!important;margin:0!important;padding:7px!important;background:#14213a!important;border-radius:10px!important;box-shadow:none!important;display:flex!important;flex-direction:row!important;align-items:center!important;gap:3px!important;overflow-x:auto!important}.app-nav:before,.app-nav:after{display:none!important;content:none!important}.app-nav a{color:#d0daeb!important;padding:8px 10px!important}.app-nav a:hover{background:rgba(53,99,233,.28)!important;color:#fff!important}}
+
+
+/* Layout hotfix: anchor the app to the viewport so sidebar and content cannot overlap */
+@media(min-width:851px){
+ html,body{min-height:100%;overflow-x:hidden}
+ .shell{position:relative!important;width:100%!important;max-width:none!important;margin:0!important;padding:0 0 0 244px!important;box-sizing:border-box!important;transform:none!important}
+ .app-nav{position:fixed!important;left:0!important;right:auto!important;top:0!important;bottom:0!important;width:244px!important;box-sizing:border-box!important}
+ .topbar{width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important}
+ .shell>.container{width:100%!important;max-width:1480px!important;box-sizing:border-box!important;margin:0 auto!important}
+}
