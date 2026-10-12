@@ -114,3 +114,47 @@ body{background:radial-gradient(ellipse at 90% 0%,rgba(116,91,230,.075),transpar
 .form h1{background:linear-gradient(100deg,#315eea,#8557dc);background-clip:text;-webkit-background-clip:text;color:transparent}
 @media(max-width:850px){.app-nav{background:linear-gradient(90deg,#171f3c,#24284c);border-radius:0 0 12px 12px;padding:7px}.app-nav a{color:#d0d7ec}.app-nav a:hover{background:rgba(106,125,245,.2);color:#fff}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Drop-inspired palette: deep plum, berry, blush, warm ivory */
+:root{--ink:#291329;--muted:#826b82;--line:#f0dce9;--canvas:#fff8fc;--navy:#310b2e;--blue:#7a0d60;--blue-dark:#5e084d;--blue-soft:#fceaf5;--green:#16836f;--red:#c73559;--amber:#b66a17;--violet:#8c1d73;--teal:#168c91;--pink:#e34d9b}
+html,body{background:#fff8fc;color:#291329}
+body{background:radial-gradient(ellipse at 90% 0%,rgba(222,65,157,.13),transparent 30%),radial-gradient(ellipse at 0% 22%,rgba(122,13,96,.07),transparent 28%),#fff8fc}
+.topbar{background:rgba(255,255,255,.96);border-bottom-color:#f0dce9;box-shadow:0 5px 24px rgba(91,20,70,.06)}
+.topbar>b:before{background:linear-gradient(145deg,#a91b7a,#5d0a50);box-shadow:0 5px 15px rgba(122,13,96,.28)}
+.container>div>h1{background:linear-gradient(100deg,#4a1040 0%,#a21d79 60%,#e34d9b 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.card{background:#fff;border-color:#f0dce9;box-shadow:0 6px 20px rgba(91,20,70,.045);border-radius:17px}
+.card h2{color:#45183d}
+.grid>.card:nth-child(1),.grid>button.card:nth-child(1){--tile:#7a0d60;color:#7a0d60;background:linear-gradient(145deg,#fff 22%,#fceaf5)}
+.grid>.card:nth-child(2),.grid>button.card:nth-child(2){--tile:#16836f;color:#16836f;background:linear-gradient(145deg,#fff 22%,#e7f8f1)}
+.grid>.card:nth-child(3),.grid>button.card:nth-child(3){--tile:#d34492;color:#d34492;background:linear-gradient(145deg,#fff 22%,#fff0f7)}
+.grid>.card:nth-child(4),.grid>button.card:nth-child(4){--tile:#c17a22;color:#c17a22;background:linear-gradient(145deg,#fff 22%,#fff4e3)}
+.grid>.card:nth-child(5),.grid>button.card:nth-child(5){--tile:#178c99;color:#178c99;background:linear-gradient(145deg,#fff 22%,#e9f9fa)}
+.grid>.card:nth-child(6),.grid>button.card:nth-child(6){--tile:#8b52c6;color:#8b52c6;background:linear-gradient(145deg,#fff 22%,#f5edff)}
+.grid>.card:nth-child(7),.grid>button.card:nth-child(7){--tile:#d65365;color:#d65365;background:linear-gradient(145deg,#fff 22%,#fff0ef)}
+.grid>.card .big,.grid>button.card .big{color:var(--tile,#7a0d60)}
+.priority-card:before{background:var(--tile,#7a0d60)}
+.priority-card:hover{border-color:var(--tile,#d7a5ca);box-shadow:0 12px 28px rgba(91,20,70,.12)}
+.btn{background:linear-gradient(135deg,#8d145f,#5b0b4d);border-color:#7a0d60;box-shadow:0 5px 14px rgba(122,13,96,.22)}
+.btn:hover{background:linear-gradient(135deg,#a21d79,#6d0c58);border-color:#6d0c58;box-shadow:0 8px 18px rgba(122,13,96,.26)}
+.secondary{background:#fff;color:#632452;border-color:#e9cfe0}
+.secondary:hover{background:#fff0f8;border-color:#dca8ca;color:#7a0d60}
+.danger{background:linear-gradient(135deg,#e05268,#bd244c);border-color:#bd244c}
+.pill{background:#f7eaf2;color:#754566}
+.pill.green,.green{background:#dcf7ec;color:#08775d}
+.table th{background:#fff0f7;color:#8a5b7b;border-bottom-color:#f0dce9}
+.table td{border-bottom-color:#f5e8f0}
+.table tbody tr:hover{background:#fff7fb}
+.table tbody tr:hover td:first-child{box-shadow:inset 3px 0 #c12d8d}
+.input{border-color:#e8d4e2;border-radius:11px;background:#fff}
+.input:focus{border-color:#c03b94;box-shadow:0 0 0 3px rgba(192,59,148,.14)}
+.success{background:linear-gradient(120deg,#e7faf1,#f5fcf8);color:#087653;border-color:#c8efdd}
+.error{background:linear-gradient(120deg,#fff0f3,#fff8fa);color:#b52d49;border-color:#f6d3db}
+.app-nav{background:linear-gradient(180deg,#310b2e 0%,#4a1040 52%,#67134e 100%);border-right-color:#61204f;box-shadow:8px 0 28px rgba(67,9,53,.12)}
+.app-nav:before{color:#fff}
+.app-nav:after{color:#e4a9d0}
+.app-nav a{color:#f0cce3}
+.app-nav a:hover{background:linear-gradient(100deg,rgba(231,70,167,.28),rgba(255,174,215,.12));border-color:rgba(255,205,233,.15);color:#fff}
+.form{border-color:#f0dce9;box-shadow:0 18px 55px rgba(91,20,70,.10)}
+.form h1{background:linear-gradient(100deg,#7a0d60,#e34d9b);background-clip:text;-webkit-background-clip:text;color:transparent}
+@media(max-width:850px){.app-nav{background:linear-gradient(90deg,#310b2e,#67134e);border-radius:0 0 12px 12px}.app-nav a{color:#f8dced}.app-nav a:hover{background:rgba(255,174,215,.17);color:#fff}}
