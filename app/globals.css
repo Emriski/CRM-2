@@ -5,3 +5,5 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .table th{font-weight:700;color:#344054;background:#f8faff}
 .table td{vertical-align:top}
 @media(max-width:600px){.topbar{padding:12px 14px;gap:10px;flex-wrap:wrap}.topbar .row{gap:6px}.card{padding:14px;border-radius:13px}.big{font-size:26px}.table{min-width:620px}.form{margin:4vh auto}}
+
+.priority-card{display:block;width:100%;text-align:left;color:inherit;font-weight:inherit;cursor:pointer;transition:border-color .15s,box-shadow .15s}.priority-card:hover{border-color:#84adff;box-shadow:0 4px 14px rgba(21,94,239,.12)}.priority-card:focus-visible{outline:3px solid #84adff;outline-offset:2px}
