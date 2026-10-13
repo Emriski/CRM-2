@@ -574,3 +574,26 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 .worker-quick-grid>button small{font-size:10px;color:#74839d;line-height:1.35}
 .worker-quick-grid>button strong{font-size:16px}
 @media(max-width:850px){.worker-global-search{order:3;flex-basis:100%;max-width:none}.worker-quick-grid{grid-template-columns:1fr}}
+
+/* Recent leads table: scanable rows and fast contact actions */
+.worker-recent-card{min-width:0}
+.worker-recent-table-wrap{width:100%;overflow-x:auto}
+.worker-recent-table{min-width:560px}
+.worker-recent-table th{font-size:10px;letter-spacing:.045em;text-transform:uppercase;color:#7283a2;background:#f7f9fd}
+.worker-recent-table td{padding:13px 10px!important;vertical-align:middle}
+.worker-recent-company{display:block;font-size:11px;margin-top:4px}
+.worker-recent-actions{display:flex;align-items:center;gap:7px}
+.worker-icon-action{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;border:1px solid #e7edf7;text-decoration:none;font-size:14px;cursor:pointer;background:#f4f7fc;color:#33506f}
+.worker-icon-action.call{background:#e7f7ff;color:#0784a0;border-color:#d0eff9}
+.worker-icon-action.whatsapp{background:#e6faf0;color:#079b61;border-color:#cff2e0}
+.worker-icon-action.details{background:#f0f4fa;color:#526783}
+.worker-icon-action:hover{transform:translateY(-1px);box-shadow:0 3px 9px #203d6818}
+.worker-recent-overdue{color:#c24136;font-weight:700}
+.worker-recent-table .pill{font-size:10px;white-space:nowrap}
+.worker-recent-table .stage-interested{background:#eaf2ff;color:#245de0}
+.worker-recent-table .stage-new{background:#f1eaff;color:#7636d9}
+.worker-recent-table .stage-contacted{background:#e4f1ff;color:#1d5bc7}
+.worker-recent-table .stage-follow_up{background:#dff8f6;color:#087f83}
+.worker-recent-table .stage-quoted{background:#fff0d8;color:#b56a00}
+.worker-recent-table .stage-won{background:#dff8ec;color:#087d50}
+.worker-recent-table .stage-lost{background:#ffe7e7;color:#b72d3c}
