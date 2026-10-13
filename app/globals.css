@@ -472,3 +472,8 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 #worker-dashboard .worker-leads{border-radius:18px;box-shadow:0 8px 26px rgba(35,54,99,.05)}
 @media(max-width:850px){.worker-timer-top{order:2;margin-left:auto;padding:8px 11px;gap:7px}.topbar{align-items:center}#worker-dashboard>div:first-child{padding:23px 20px}#worker-dashboard>div:first-child:after{right:15px;font-size:68px}}
 @media(max-width:480px){.worker-timer-top>span:nth-of-type(2){display:none}.worker-timer-top{gap:8px;padding:9px 10px}.worker-timer-top strong{font-size:12px}#worker-dashboard .worker-kpis>.card,#worker-dashboard .worker-kpis>button.card{min-height:120px;padding:16px}}
+
+/* Keep lead capture compact until a worker asks to open it */
+.add-lead-launcher{align-self:start;min-height:176px;align-content:start;background:linear-gradient(140deg,#fff 35%,#f0f5ff)!important;border-color:#dce6fb!important}
+.add-lead-launcher>.btn{width:100%;min-height:44px}
+.add-lead-form{padding-top:14px;border-top:1px solid #e4eaf5}
