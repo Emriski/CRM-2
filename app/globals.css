@@ -433,3 +433,13 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 .admin-activation{background:linear-gradient(125deg,#fff 0%,#f7f9ff 100%)!important}
 @media(max-width:760px){.admin-add-panel .grid,.pipeline-mini-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.section-heading{gap:8px}}
 @media(max-width:460px){.admin-add-panel .grid,.pipeline-mini-kpis{grid-template-columns:1fr!important}.admin-add-panel>.btn{width:100%}}
+
+
+/* Admin overview: recent leads and follow-up priorities */
+.admin-overview-lists{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;margin:0 0 4px}
+.overview-lead-row{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:13px 0;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--border,#e5eaf2);color:inherit;cursor:pointer}
+.overview-lead-row:last-of-type{border-bottom:0}
+.overview-lead-row:hover{background:rgba(70,100,160,.045)}
+.overview-lead-sub{display:block;margin-top:4px;font-size:.84rem}
+.overview-due{white-space:nowrap;font-size:.85rem;font-weight:650;color:#b45309}
+@media(max-width:760px){.admin-overview-lists{grid-template-columns:minmax(0,1fr)}}
