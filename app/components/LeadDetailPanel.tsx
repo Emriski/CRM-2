@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { sb } from "../lib/supabase";
+import { sb } from "../../lib/supabase";
 
 type Lead = {
   id: string; name: string; phone: string | null; email: string | null;
