@@ -406,3 +406,30 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 #add-lead,#log-contact{scroll-margin-top:22px}
 @media(max-width:1100px){.worker-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:560px){.worker-kpis,.worker-actions{grid-template-columns:1fr!important}.worker-kpis>.card{min-height:105px}.worker-actions>.card{width:100%}}
+
+
+/* Admin dashboard premium hierarchy and richer pipeline tools */
+#team-overview>div:first-child{padding:8px 0 2px}
+#team-overview>div:first-child h1{font-size:clamp(30px,3vw,40px);letter-spacing:-1.4px;margin-bottom:8px}
+#team-overview>div:first-child .muted{font-size:15px}
+.admin-kpis>.card{position:relative;overflow:hidden;box-shadow:0 7px 22px rgba(21,39,76,.045)!important}
+.admin-kpis>.card:after{content:"";position:absolute;width:92px;height:92px;border-radius:50%;right:-20px;top:-26px;background:currentColor;opacity:.035;pointer-events:none}
+.section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.section-heading h2{margin:4px 0 6px}
+.eyebrow{font-size:10px;letter-spacing:1.7px;font-weight:800;color:#7384a1}
+.panel-icon{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:13px;background:#edf3ff;color:#315fce;font-size:25px;font-weight:600;flex-shrink:0}
+.admin-add-panel,.admin-pipeline,.admin-activation{border:1px solid #e2e9f4!important;box-shadow:0 10px 28px rgba(25,45,83,.045)!important}
+.admin-add-panel{background:linear-gradient(135deg,#fff 0%,#f8faff 100%)!important}
+.admin-add-panel .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.admin-add-panel .input,.pipeline-tools .input{min-height:44px}
+.admin-add-panel>.btn{align-self:flex-start;min-width:160px}
+.pipeline-mini-kpis{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
+.pipeline-mini-kpis>.card{padding:14px 16px!important;background:#f8faff!important;border:1px solid #e7edf7!important;box-shadow:none!important}
+.pipeline-mini-kpis .big{font-size:24px!important}
+.pipeline-tools{align-items:center;margin:3px 0 8px}
+.admin-pipeline .table th{font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:#71809a}
+.admin-pipeline .table td{padding-top:14px;padding-bottom:14px}
+.admin-pipeline .table tbody tr:hover{background:#f8faff}
+.admin-activation{background:linear-gradient(125deg,#fff 0%,#f7f9ff 100%)!important}
+@media(max-width:760px){.admin-add-panel .grid,.pipeline-mini-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.section-heading{gap:8px}}
+@media(max-width:460px){.admin-add-panel .grid,.pipeline-mini-kpis{grid-template-columns:1fr!important}.admin-add-panel>.btn{width:100%}}
