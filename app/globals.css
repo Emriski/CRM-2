@@ -389,3 +389,20 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 #team-pipeline .lead-open{gap:3px}
 @media(max-width:1050px){.admin-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:480px){.admin-kpis{grid-template-columns:1fr!important}}
+
+
+/* Worker workspace: clear priorities and task-focused panels */
+.worker-kpis{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+.worker-kpis>.card{padding:19px!important;min-height:132px;text-align:left}
+.worker-kpis>.priority-card{text-align:left;align-items:flex-start}
+.worker-kpis>.worker-kpi-overdue{border-top:3px solid #d08a27!important}
+.worker-kpis>.worker-kpi-today{border-top:3px solid #3267e9!important}
+.worker-kpis>.worker-kpi-upcoming{border-top:3px solid #11866b!important}
+.worker-kpis>.worker-kpi-timer{border-top:3px solid #7256ce!important}
+.worker-kpis>.card .big{font-size:29px!important}
+.worker-actions{align-items:start;gap:18px!important}
+.worker-actions>.card{min-width:0}
+.worker-leads{scroll-margin-top:22px}
+#add-lead,#log-contact{scroll-margin-top:22px}
+@media(max-width:1100px){.worker-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:560px){.worker-kpis,.worker-actions{grid-template-columns:1fr!important}.worker-kpis>.card{min-height:105px}.worker-actions>.card{width:100%}}
