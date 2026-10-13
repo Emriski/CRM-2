@@ -536,3 +536,24 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 @media(max-width:1050px){#worker-dashboard .worker-kpis{grid-template-columns:repeat(3,minmax(0,1fr))!important}.worker-overview-lists{grid-template-columns:1fr 1fr!important}}
 @media(max-width:720px){#worker-dashboard .worker-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.worker-overview-lists{grid-template-columns:1fr!important}}
 @media(max-width:420px){#worker-dashboard .worker-kpis{grid-template-columns:1fr 1fr!important;gap:9px!important}#worker-dashboard .worker-kpis>.card,#worker-dashboard .worker-kpis>button.card{padding:13px!important;min-height:110px!important}}
+
+/* Compact, balanced dashboard refinement */
+@media(min-width:851px){
+ .shell>.container{padding-top:22px!important}
+ .topbar{position:sticky;top:0;z-index:30}
+}
+#worker-dashboard{gap:18px!important}
+#worker-dashboard>div:first-child{padding:23px 28px!important;border-radius:16px!important}
+#worker-dashboard>div:first-child:after{font-size:88px!important;right:30px!important;top:8px!important}
+#worker-dashboard .worker-kpis{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:13px!important}
+#worker-dashboard .worker-kpis>.card,#worker-dashboard .worker-kpis>button.card{min-height:112px!important;padding:16px 18px!important}
+#worker-dashboard .worker-kpis .big{font-size:30px!important;margin:5px 0!important}
+#worker-dashboard .worker-kpis .muted{line-height:1.45}
+.worker-overview-lists{grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr)!important;gap:14px!important}
+.worker-overview-lists>.card{padding:17px!important}
+.worker-overview-lists .section-heading{margin-bottom:2px}
+.worker-overview-lists .overview-lead-row{padding:11px 7px!important}
+#worker-dashboard .worker-actions>.card{padding:18px!important}
+#worker-dashboard .worker-leads{padding:18px!important}
+@media(max-width:1050px){#worker-dashboard .worker-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.worker-overview-lists{grid-template-columns:1fr!important}}
+@media(max-width:560px){#worker-dashboard>div:first-child{padding:20px 17px!important}#worker-dashboard>div:first-child:after{font-size:64px!important;right:10px!important}.worker-overview-lists>.card{padding:15px!important}}
