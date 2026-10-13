@@ -68,16 +68,9 @@ export default function LeadDetailPanel({ leadId, actorId, onClose }: {
     const clean = notes.trim();
     if (!clean || !lead) return;
     setSaving(true); setError(""); setMessage("");
-    const leadResult = await sb.from("leads").update({ notes: clean, updated_at: new Date().toISOString() }).eq("id", leadId);
-    if (leadResult.error) { setSaving(false); setError(leadResult.error.message); return; }
-    const activityResult = await sb.from("activities").insert({
-      worker_id: actorId, lead_id: leadId, type: "note", notes: clean, outcome: "Note added"
-    });
+    const result = await sb.rpc("add_lead_note", { p_lead_id: leadId, p_notes: clean });
     setSaving(false);
-    if (activityResult.error) {
-      setError("The lead note was saved, but adding it to the timeline failed: " + activityResult.error.message);
-      await load(); return;
-    }
+    if (result.error) { setError(result.error.message); return; }
     setMessage("Note saved to the lead and timeline.");
     await load();
   }
