@@ -557,3 +557,20 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 #worker-dashboard .worker-leads{padding:18px!important}
 @media(max-width:1050px){#worker-dashboard .worker-kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important}.worker-overview-lists{grid-template-columns:1fr!important}}
 @media(max-width:560px){#worker-dashboard>div:first-child{padding:20px 17px!important}#worker-dashboard>div:first-child:after{font-size:64px!important;right:10px!important}.worker-overview-lists>.card{padding:15px!important}}
+
+/* Reference design finishing touches: global search and quick actions */
+.worker-brand{display:flex;flex-direction:column;gap:2px;white-space:nowrap}
+.worker-global-search{flex:1 1 240px!important;max-width:560px;min-width:120px;min-height:42px!important;border:1px solid #e4eaf4!important;border-radius:999px!important;background:#f5f7fb!important;padding:0 18px!important;font-size:13px!important}
+.worker-global-search:focus{background:#fff!important;border-color:#8bb2ff!important;box-shadow:0 0 0 3px rgba(37,99,235,.1)!important}
+.worker-quick-actions{padding:19px!important;border:1px solid #e4eaf4!important;border-radius:15px!important;box-shadow:0 7px 22px rgba(35,54,99,.04)!important}
+.worker-quick-actions h2{margin:4px 0}
+.worker-quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
+.worker-quick-grid>button{display:flex;align-items:center;gap:10px;min-width:0;padding:13px;border:1px solid #dce7ff;border-radius:12px;background:linear-gradient(135deg,#f8faff,#edf3ff);color:#2159cf;text-align:left;font-size:22px;cursor:pointer;transition:transform .16s,box-shadow .16s}
+.worker-quick-grid>button:nth-child(2){color:#0b986a;border-color:#cdeee1;background:linear-gradient(135deg,#f7fffb,#e9faf3)}
+.worker-quick-grid>button:nth-child(3){color:#7435db;border-color:#e5d7ff;background:linear-gradient(135deg,#fcfaff,#f3edff)}
+.worker-quick-grid>button:hover{transform:translateY(-2px);box-shadow:0 7px 17px rgba(36,65,120,.09)}
+.worker-quick-grid>button span{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.worker-quick-grid>button b{font-size:12px;color:#172b4d}
+.worker-quick-grid>button small{font-size:10px;color:#74839d;line-height:1.35}
+.worker-quick-grid>button strong{font-size:16px}
+@media(max-width:850px){.worker-global-search{order:3;flex-basis:100%;max-width:none}.worker-quick-grid{grid-template-columns:1fr}}
