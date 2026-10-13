@@ -443,3 +443,32 @@ body{background:linear-gradient(180deg,#f8faff 0%,#f3f6fb 100%)}
 .overview-lead-sub{display:block;margin-top:4px;font-size:.84rem}
 .overview-due{white-space:nowrap;font-size:.85rem;font-weight:650;color:#b45309}
 @media(max-width:760px){.admin-overview-lists{grid-template-columns:minmax(0,1fr)}}
+
+
+/* Premium worker dashboard refresh */
+#worker-dashboard{padding-top:30px}
+#worker-dashboard>div:first-child{position:relative;overflow:hidden;padding:28px 30px;border:1px solid #dbe7ff;border-radius:20px;background:linear-gradient(112deg,#eef5ff 0%,#f7f8ff 54%,#f0eaff 100%);box-shadow:0 12px 34px rgba(52,91,177,.08)}
+#worker-dashboard>div:first-child:after{content:"↗";position:absolute;right:38px;top:12px;font-size:100px;line-height:1;font-weight:800;color:rgba(56,103,230,.12);pointer-events:none}
+#worker-dashboard>div:first-child h1{font-size:clamp(28px,3vw,40px);letter-spacing:-1.4px;margin-bottom:10px;color:#192b50;background:linear-gradient(90deg,#1b2e52,#285fe2);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#worker-dashboard>div:first-child p{font-size:15px;max-width:580px}
+#worker-dashboard .worker-kpis{gap:16px}
+#worker-dashboard .worker-kpis>.card,#worker-dashboard .worker-kpis>button.card{min-height:142px;padding:22px;border-radius:16px;box-shadow:0 6px 18px rgba(35,54,99,.045);transition:transform .18s,box-shadow .18s}
+#worker-dashboard .worker-kpis>.card:hover,#worker-dashboard .worker-kpis>button.card:hover{transform:translateY(-3px);box-shadow:0 13px 28px rgba(35,54,99,.1)}
+#worker-dashboard .worker-kpis .big{font-size:36px}
+#worker-dashboard .worker-kpis>button:nth-child(1){border-top:3px solid #3769ed}
+#worker-dashboard .worker-kpis>button:nth-child(2){border-top:3px solid #10a578}
+#worker-dashboard .worker-kpis>button:nth-child(3){border-top:3px solid #8758df}
+#worker-dashboard .worker-kpis>div:nth-child(4){border-top:3px solid #f3a33d}
+#worker-dashboard .worker-kpis>div:nth-child(5){border-top:3px solid #12a3b3}
+#worker-dashboard .worker-kpis>div:nth-child(6){border-top:3px solid #e34f97}
+#worker-dashboard .worker-kpis>div:nth-child(7){border-top:3px solid #6675dc}
+.worker-timer-top{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;padding:9px 14px;border:1px solid #bfe9da;border-radius:999px;background:#ecfbf5;color:#087c5e;font-weight:750;box-shadow:0 3px 10px rgba(12,138,99,.08);white-space:nowrap}
+.worker-timer-top strong{font-variant-numeric:tabular-nums;font-size:13px;letter-spacing:.4px}
+.worker-timer-top:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(12,138,99,.15)}
+.worker-timer-top.active{background:#fff0f1;border-color:#f3c5cc;color:#b52f4d}
+.timer-status-dot{width:8px;height:8px;border-radius:50%;background:#0aa777;box-shadow:0 0 0 4px rgba(10,167,119,.12)}
+.worker-timer-top.active .timer-status-dot{background:#d83d58;box-shadow:0 0 0 4px rgba(216,61,88,.12)}
+#worker-dashboard .worker-actions>.card{border-radius:17px;box-shadow:0 7px 22px rgba(35,54,99,.045)}
+#worker-dashboard .worker-leads{border-radius:18px;box-shadow:0 8px 26px rgba(35,54,99,.05)}
+@media(max-width:850px){.worker-timer-top{order:2;margin-left:auto;padding:8px 11px;gap:7px}.topbar{align-items:center}#worker-dashboard>div:first-child{padding:23px 20px}#worker-dashboard>div:first-child:after{right:15px;font-size:68px}}
+@media(max-width:480px){.worker-timer-top>span:nth-of-type(2){display:none}.worker-timer-top{gap:8px;padding:9px 10px}.worker-timer-top strong{font-size:12px}#worker-dashboard .worker-kpis>.card,#worker-dashboard .worker-kpis>button.card{min-height:120px;padding:16px}}
