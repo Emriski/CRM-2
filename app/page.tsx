@@ -1,4 +1,5 @@
 "use client";
+// CRM lead finder: location-targeted prospect discovery and qualified lead capture.
 import {useEffect,useState} from "react";
 import {sb} from "../lib/supabase";
 import LeadDetailPanel from "./components/LeadDetailPanel";
